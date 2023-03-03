@@ -1,0 +1,95 @@
+/* START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 100px 30px;
+    background-color: #0e7b70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: min(100%,800px);
+    max-height: 80vh;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(10deg , #74ebfb , #057d71);
+}
+
+.input_text,
+.input_select,
+.input_submit {
+    width: 100%;
+    margin: 20px 0;
+    padding: 8px 10px;
+    outline: none;
+    border: unset;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+input[type='checkbox'] {
+    margin-left: 10px;
+}
+
+.select {
+    cursor: pointer;
+}
+
+option {
+    text-transform: capitalize;
+}
+
+.submit {
+    cursor: pointer;
+    background-color: #333;
+    text-transform: uppercase;
+    color: white;
+}
+
+.todolist {
+    overflow-y: scroll;
+}
+
+.todolist > li {
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.todolist > li > p {
+    display: flex;
+    margin-top: 5px;
+}
+
+.todolist > li > p > i {
+    color: red;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.complete {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.not-complete {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+/* THE END */
